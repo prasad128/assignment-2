@@ -33,14 +33,14 @@ function Carousel() {
   };
 
   return (
-    <div className="px-3 py-2 space-y-2 bg-white shadow-2xl">
+    <div className="px-3 pt-2 pb-3 space-y-2 bg-white shadow-2xl">
       <div className="text-xl tracking-wide text-gray-500 uppercase">
         Announcements
       </div>
-      <div className="flex items-center justify-between space-x-3">
+      <div className="flex items-center justify-between space-x-4">
         <div
           onClick={backwardSlide}
-          className="p-1.5 text-2xl font-bold text-gray-500 bg-gray-300 rounded-full active:border-yellow-500 border hover:text-yellow-500 active:text-yellow-600 cursor-pointer"
+          className="p-1.5 text-xl font-bold text-gray-500 bg-gray-300 rounded-full active:border-yellow-500 border hover:text-yellow-500 active:text-yellow-600 cursor-pointer"
         >
           <IoChevronBackSharp />
         </div>
@@ -56,7 +56,7 @@ function Carousel() {
         </div>
         <div
           onClick={forwardSlide}
-          className="p-1.5 text-2xl text-gray-500 bg-gray-300 rounded-full active:border-yellow-500 border hover:text-yellow-500 active:text-yellow-600 cursor-pointer"
+          className="p-1.5 text-xl text-gray-500 bg-gray-300 rounded-full active:border-yellow-500 border hover:text-yellow-500 active:text-yellow-600 cursor-pointer"
         >
           <IoChevronForwardSharp />
         </div>

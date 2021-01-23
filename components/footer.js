@@ -10,45 +10,47 @@ toast.configure();
 
 function Footer() {
   const notify = (name) => {
-    return toast(`You clicked ${name}`);
+    return toast(`You clicked ${name}`, {
+      position: "top-center",
+    });
   };
   return (
-    <div className="flex items-center justify-between px-4 pt-3 pb-2 text-gray-300 bg-blue-900">
+    <div className="flex justify-between px-4 pt-3 pb-1 text-gray-300 bg-blue-900">
       <div
         onClick={() => notify("Favorites")}
-        className="flex flex-col items-center justify-between cursor-pointer hover:text-yellow-500 active:text-yellow-600"
+        className="flex flex-col items-center space-y-1 cursor-pointer hover:text-yellow-500 active:text-yellow-600"
       >
         <div className="text-2xl">
           <MdFavorite />
         </div>
-        <div className="">Favorites</div>
+        <div className="text-sm tracking-wide">Favorites</div>
       </div>
       <div
         onClick={() => notify("Teams")}
-        className="flex flex-col items-center cursor-pointer hover:text-yellow-500 active:text-yellow-600"
+        className="flex flex-col items-center space-y-1 cursor-pointer hover:text-yellow-500 active:text-yellow-600"
       >
         <div className="text-2xl">
           <HiUserGroup />
         </div>
-        <div className="">Teams</div>
+        <div className="text-sm tracking-wide">Teams</div>
       </div>
       <div
         onClick={() => notify("Approvals")}
-        className="flex flex-col items-center cursor-pointer hover:text-yellow-500 active:text-yellow-600"
+        className="flex flex-col items-center space-y-1 cursor-pointer hover:text-yellow-500 active:text-yellow-600"
       >
         <div className="text-2xl">
           <BsExclamationCircleFill />
         </div>
-        <div className="">Approvals</div>
+        <div className="text-sm tracking-wide">Approvals</div>
       </div>
       <div
         onClick={() => notify("Notifications")}
-        className="flex flex-col items-center cursor-pointer hover:text-yellow-500 active:text-yellow-600"
+        className="flex flex-col items-center space-y-1 cursor-pointer hover:text-yellow-500 active:text-yellow-600"
       >
         <div className="text-2xl">
           <MdNotifications />
         </div>
-        <div className="">Notifications</div>
+        <div className="text-sm tracking-wide">Notifications</div>
       </div>
     </div>
   );

@@ -19,6 +19,10 @@ module.exports = {
       transitionDelay: {
         5000: "5000ms",
       },
+      fontSize: {
+        "1xl": ["1.375rem", "1.75rem"],
+        base2: ["0.950rem", "1rem"],
+      },
     },
   },
   variants: {

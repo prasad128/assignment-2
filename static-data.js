@@ -2,11 +2,11 @@ export const leaveData = [
   {
     id: 0,
     startDate: {
-      day: 3,
+      day: "03",
       month: "Sep",
     },
     endDate: {
-      day: 7,
+      day: "07",
       month: "Sep",
     },
     leaveType: "Leave Without Pay",
@@ -15,11 +15,11 @@ export const leaveData = [
   {
     id: 1,
     startDate: {
-      day: 25,
+      day: "25",
       month: "Aug",
     },
     endDate: {
-      day: 25,
+      day: "25",
       month: "Aug",
     },
     leaveType: "Could not sign in",
@@ -28,11 +28,11 @@ export const leaveData = [
   {
     id: 2,
     startDate: {
-      day: 1,
+      day: "01",
       month: "Jul",
     },
     endDate: {
-      day: 7,
+      day: "07",
       month: "Jul",
     },
     leaveType: "Leave Without Pay",
@@ -41,11 +41,11 @@ export const leaveData = [
   {
     id: 3,
     startDate: {
-      day: 25,
+      day: "25",
       month: "Jun",
     },
     endDate: {
-      day: 25,
+      day: "25",
       month: "Jun",
     },
     leaveType: "Paid Leave",
@@ -54,11 +54,11 @@ export const leaveData = [
   {
     id: 4,
     startDate: {
-      day: 23,
+      day: "23",
       month: "May",
     },
     endDate: {
-      day: 27,
+      day: "27",
       month: "May",
     },
     leaveType: "Leave Without Pay",
@@ -67,11 +67,11 @@ export const leaveData = [
   {
     id: 5,
     startDate: {
-      day: 3,
+      day: "03",
       month: "Feb",
     },
     endDate: {
-      day: 7,
+      day: "07",
       month: "Feb",
     },
     leaveType: "Leave Without Pay",
@@ -83,7 +83,7 @@ export const attendanceData = [
   {
     id: 1,
     attendanceDay: {
-      day: 22,
+      day: "22",
       month: "Jan",
     },
     weekDay: "Monday",
@@ -93,7 +93,7 @@ export const attendanceData = [
   {
     id: 2,
     attendanceDay: {
-      day: 2,
+      day: "02",
       month: "Feb",
     },
     weekDay: "Monday",
@@ -103,7 +103,7 @@ export const attendanceData = [
   {
     id: 3,
     attendanceDay: {
-      day: 25,
+      day: "25",
       month: "Aug",
     },
     weekDay: "Tuesday",
@@ -113,7 +113,7 @@ export const attendanceData = [
   {
     id: 4,
     attendanceDay: {
-      day: 14,
+      day: "14",
       month: "Sep",
     },
     weekDay: "Wednesday",
@@ -123,7 +123,7 @@ export const attendanceData = [
   {
     id: 5,
     attendanceDay: {
-      day: 25,
+      day: "25",
       month: "Nov",
     },
     weekDay: "Thursday",
@@ -133,7 +133,7 @@ export const attendanceData = [
   {
     id: 6,
     attendanceDay: {
-      day: 5,
+      day: "05",
       month: "Dec",
     },
     weekDay: "Friday",

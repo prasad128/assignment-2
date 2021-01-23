@@ -18,21 +18,23 @@ function AttendanceDataList({
   };
 
   return (
-    <div className="px-4 py-6 space-y-8">
+    <div className="py-6 pl-4 pr-2 space-y-7">
       {data &&
         data.map((dt) => {
           return (
             <div
               key={dt.id}
-              className={`flex items-center border-l-8 ${
+              className={`flex items-center border-l-8 text-gray-500 ${
                 dt.attendanceType === "Absent"
                   ? " border-red-600"
                   : "border-green-600"
               } rounded-lg`}
             >
               <div className="flex flex-col items-center px-4 py-2 bg-gray-200">
-                <div className="text-xl">{dt.attendanceDay.day}</div>
-                <div className="text-xs tracking-wide">
+                <div className="text-xl font-semibold leading-tight">
+                  {dt.attendanceDay.day}
+                </div>
+                <div className="text-xs leading-tight tracking-wide">
                   {dt.attendanceDay.month}
                 </div>
               </div>
@@ -48,7 +50,7 @@ function AttendanceDataList({
               {dt.attendanceType === "Absent" ? (
                 <div
                   onClick={() => handleConfirmModal(dt.id)}
-                  className="p-1 text-lg text-green-500 bg-green-200 border rounded-full active:text-green-600 hover:border-green-600"
+                  className="p-1 text-lg text-green-500 bg-green-100 border rounded-full active:text-green-600 hover:border-green-600"
                 >
                   <IoMdAdd />
                 </div>

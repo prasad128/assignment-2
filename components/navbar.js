@@ -11,7 +11,9 @@ toast.configure();
 
 function Navbar({ setSidebar, sidebar }) {
   const notify = (name) => {
-    return toast(`You clicked ${name}`);
+    return toast(`You clicked ${name}`, {
+      position: "top-center",
+    });
   };
 
   return (
@@ -22,7 +24,7 @@ function Navbar({ setSidebar, sidebar }) {
         <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
         <div className="w-3 h-3 transform rotate-45 bg-gray-500"></div>
       </div>
-      <div className="flex items-center justify-between p-3 text-2xl text-white">
+      <div className="flex items-center justify-between px-3 pt-3 pb-1 text-2xl text-white">
         <div className="flex items-center space-x-8">
           <div
             onClick={() => setSidebar(!sidebar)}
@@ -30,7 +32,7 @@ function Navbar({ setSidebar, sidebar }) {
           >
             {sidebar ? <CgClose /> : <FiMenu />}
           </div>
-          <div className="font-semibold">Home</div>
+          <div className="pt-1 font-semibold text-1xl">Home</div>
         </div>
         <div className="flex space-x-6 text-gray-300">
           <div
