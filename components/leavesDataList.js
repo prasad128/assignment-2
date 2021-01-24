@@ -69,7 +69,7 @@ function LeavesDataList({ data, modal, setModal, handleClick }) {
         })}
       {modal && (
         <div className="absolute inset-0 z-40 flex items-center justify-center">
-          <div className="px-4 py-2 text-black bg-white border border-black rounded shadow-2xl">
+          <div className="px-4 py-2 text-black bg-gray-100 border border-black rounded shadow-2xl">
             <div className="font-semibold">Do you want to cancel leave?</div>
             <div className="mt-4 space-x-3">
               <button
