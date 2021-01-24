@@ -18,6 +18,9 @@ function LeavesDataList({ data, modal, setModal, handleClick }) {
     setModal(true);
     setNum(id);
   };
+  // const animate = modal
+  //   ? "transform duration-700 translate-x-0 origin-left ease-out"
+  //   : "transform duration-700 -translate-x-full origin-left ease-out";
   return (
     <div className="py-6 pl-4 pr-2 space-y-7 ">
       {data &&
@@ -65,8 +68,8 @@ function LeavesDataList({ data, modal, setModal, handleClick }) {
           );
         })}
       {modal && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black opacity-75">
-          <div className="px-4 py-2 text-black bg-white border border-black rounded">
+        <div className="absolute inset-0 z-40 flex items-center justify-center">
+          <div className="px-4 py-2 text-black bg-white border border-black rounded shadow-2xl">
             <div className="font-semibold">Do you want to cancel leave?</div>
             <div className="mt-4 space-x-3">
               <button

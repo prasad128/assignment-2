@@ -59,21 +59,21 @@ function AttendanceDataList({
           );
         })}
       {confirmModal && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black opacity-75">
+        <div className="absolute inset-0 z-40 flex items-center justify-center">
           <div className="px-4 py-2 text-black bg-white border border-black rounded">
             <div className="font-semibold">You clicked on Regularize</div>
             <div className="mt-4 space-x-3">
-              <button
-                className="z-50 px-2 py-1 border rounded hover:bg-green-500 active:bg-green-700 hover:text-white"
-                onClick={() => handleConfirm(num)}
-              >
-                Ok
-              </button>
               <button
                 className="z-50 px-2 py-1 border rounded hover:bg-red-500 active:bg-red-700 hover:text-white"
                 onClick={() => setConfirmModal(false)}
               >
                 Cancel
+              </button>
+              <button
+                className="z-50 px-2 py-1 border rounded hover:bg-green-500 active:bg-green-700 hover:text-white"
+                onClick={() => handleConfirm(num)}
+              >
+                Ok
               </button>
             </div>
           </div>
